@@ -14,3 +14,6 @@ app.use(express.urlencoded({ extended: true }))
 // Import my routes
 const usersRoutes = require('./routes/usersRoutes')
 app.use('/api/users', usersRoutes)
+
+const showsRoutes = require('./routes/showsRoutes')
+app.use('/api/shows', showsRoutes)
