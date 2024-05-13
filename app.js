@@ -10,3 +10,7 @@ app.listen(PORT, () => {
 // Middleware
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
+
+// Import my routes
+const usersRoutes = require('./routes/usersRoutes')
+app.use('/api/users', usersRoutes)
